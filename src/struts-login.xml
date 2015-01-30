@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="login" namespace="/login" extends="default">
+	     <action name="login" class="com.cs.backend.action.LoginAction" method="login">
+	     	<result name="success">/WEB-INF/web/welcome.jsp</result>
+	     	<result name="input">/index.jsp</result>
+	     </action>
+	     <action name="loginSuccess" class="com.cs.backend.action.LoginAction" method="loginSuccess">
+	     	<result name="success">/WEB-INF/web/loginSuccess.jsp</result>
+	     	<result name="input">/index.jsp</result>
+	     </action>
+	     <action name="loginOut" class="com.cs.backend.action.LoginAction" method="loginOut">
+	     	<result name="success">/index.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	     <action name="findMenuModule" class="com.cs.backend.action.LoginAction" method="findMenuModule">
+	     	<result name="success">/WEB-INF/web/menu.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	     <action name="error" class="com.cs.backend.action.LoginAction" method="error">
+			<result name="success">
+			/WEB-INF/web/error.jsp
+			</result>
+		</action>
+		<action name="desktopPage" class="com.cs.backend.action.LoginAction" method="desktopPage">
+	     	<result name="success">/WEB-INF/web/${page}.jsp</result>
+	     </action>
+	</package>
+</struts>

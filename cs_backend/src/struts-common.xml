@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="common" namespace="/common" extends="default">
+	     <action name="getServerMenu" class="com.cs.backend.action.CommonAction" method="getServerMenu">
+	     	<result name="success">/WEB-INF/web/common/serverSelectMenu.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	     <action name="getServerOneMenu" class="com.cs.backend.action.CommonAction" method="getServerOneMenu">
+	     	<result name="success">/WEB-INF/web/common/serverOneMenu.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	</package>
+</struts>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="menu" namespace="/menu" extends="default">
+	     <action name="addMenu" class="com.cs.backend.action.MenuAction" method="addMenu">
+	     	<result name="success">/WEB-INF/web/menu/addMenu.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	      <action name="menuAdd" class="com.cs.backend.action.MenuAction" method="menuAdd">
+	     	<result name="success">/WEB-INF/web/menu/addMenu.jsp</result>
+	     	<result name="input">/WEB-INF/web/menu/addMenu.jsp</result>
+	     </action>
+	     <action name="searchMenu" class="com.cs.backend.action.MenuAction" method="searchMenu">
+	     	<result name="success">/WEB-INF/web/menu/menuList.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	     <action name="showMenuList" class="com.cs.backend.action.MenuAction" method="showMenuList">
+	     	<result name="success">/WEB-INF/web/menu/showMenuList.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	     <action name="showMenuByPrimaryKey" class="com.cs.backend.action.MenuAction" method="showMenuByPrimaryKey">
+	     	<result name="success">/WEB-INF/web/menu/showMenuByPrimaryKey.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	     <action name="menuModify" class="com.cs.backend.action.MenuAction" method="menuModify">
+	     	<result name="success">/WEB-INF/web/menu/showMenuList.jsp</result>
+	     	<result name="input">/WEB-INF/web/menu/showMenuByPrimaryKey.jsp</result>
+	     </action>
+	     <action name="menuByIdLogicDelete" class="com.cs.backend.action.MenuAction" method="menuByIdLogicDelete">
+	     	<result name="success">/WEB-INF/web/menu/showMenuList.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	     <action name="uploadIcon" class="com.cs.backend.action.UploadAction" method="uploadIcon">
+	     	<result name="success">
+	     		<!-- <param name="includeProperties">fileFileName,result</param> -->
+	     	</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	     <action name="uploadIconCache" class="com.cs.backend.action.UploadAction" method="uploadIconCache">
+	     	<result name="success" type="json">
+	     		<param name="includeProperties">fileFileName,result</param>
+	     	</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	     <action name="modifyMenuIconShowPage" class="com.cs.backend.action.MenuAction" method="modifyMenuIconShowPage">
+	     	<result name="success">/WEB-INF/web/menu/modifyMenuIconShowPage.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	     <action name="menuIconAdd" class="com.cs.backend.action.MenuAction" method="menuIconAdd">
+	     	<result name="success" type="json">fileFileName</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	</package>
+</struts>

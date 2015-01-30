@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="role" namespace="/role" extends="default">		
+		<action name="addRoleShowPage" class="com.cs.backend.action.RoleAction"
+			method="addRoleShowPage">
+			<result name="success">/WEB-INF/web/role/addRole.jsp</result>
+			<result name="input">/error.jsp</result>
+		</action>
+		<action name="roleAdd" class="com.cs.backend.action.RoleAction"
+			method="roleAdd">
+			<result name="success">/WEB-INF/web/role/addRole.jsp</result>
+			<result name="input">/WEB-INF/web/role/addRole.jsp</result>
+		</action>
+		<action name="searchRole" class="com.cs.backend.action.RoleAction"
+			method="searchRole">
+			<result name="success">/WEB-INF/web/role/roleList.jsp</result>
+			<result name="input">/error.jsp</result>
+		</action>
+		<action name="showRoleList" class="com.cs.backend.action.RoleAction"
+			method="showRoleList">
+			<result name="success">/WEB-INF/web/role/showRoleList.jsp</result>
+			<result name="input">/error.jsp</result>
+		</action>
+		<action name="showRoleByPrimaryKey" class="com.cs.backend.action.RoleAction"
+			method="showRoleByPrimaryKey">
+			<result name="success">/WEB-INF/web/role/showRoleByPrimaryKey.jsp
+			</result>
+			<result name="input">/error.jsp</result>
+		</action>
+		<action name="roleModify" class="com.cs.backend.action.RoleAction"
+			method="roleModify">
+			<result name="success">/WEB-INF/web/role/showRoleList.jsp</result>
+			<result name="input">/WEB-INF/web/role/showRoleByPrimaryKey.jsp</result>
+		</action>
+		<action name="roleByIdLogicDelete" class="com.cs.backend.action.RoleAction"
+			method="roleByIdLogicDelete">
+			<result name="success">/WEB-INF/web/role/showRoleList.jsp</result>
+			<result name="input">/error.jsp</result>
+		</action>
+	</package>
+	<package name="role/right" namespace="/role/right" extends="default">
+		<action name="menuRoleShowPage" class="com.cs.backend.action.RoleMenuAction"
+			method="menuRoleShowPage">
+			<result name="success">/WEB-INF/web/role/right/menuRoleShowPage.jsp
+			</result>
+			<result name="input">/error.jsp</result>
+		</action>
+		<action name="showMenuListByRole" class="com.cs.backend.action.RoleMenuAction"
+			method="showMenuListByRole">
+			<result name="success">/WEB-INF/web/role/right/menuListShowPage.jsp
+			</result>
+			<result name="input">/error.jsp</result>
+		</action>
+		<action name="menuRoleAdd" class="com.cs.backend.action.RoleMenuAction"
+			method="menuRoleAdd">
+			<result name="success">/WEB-INF/web/role/right/menuListShowPage.jsp
+			</result>
+			<result name="input">/error.jsp</result>
+		</action>
+		<action name="menuRoleDelete" class="com.cs.backend.action.RoleMenuAction"
+			method="menuRoleDelete">
+			<result name="success">/WEB-INF/web/role/right/menuListShowPage.jsp
+			</result>
+			<result name="input">/error.jsp</result>
+		</action>
+	</package>
+	<package name="role/user" namespace="/role/user" extends="default">
+		<action name="userRoleShowPage" class="com.cs.backend.action.RoleUserAction"
+			method="userRoleShowPage">
+			<result name="success">/WEB-INF/web/role/right/userRoleShowPage.jsp
+			</result>
+			<result name="input">/error.jsp</result>
+		</action>
+		<action name="showUserListByRole" class="com.cs.backend.action.RoleUserAction"
+			method="showUserListByRole">
+			<result name="success">/WEB-INF/web/role/right/userListShowPage.jsp
+			</result>
+			<result name="input">/error.jsp</result>
+		</action>
+		<action name="userRoleAdd" class="com.cs.backend.action.RoleUserAction"
+			method="userRoleAdd">
+			<result name="success">/WEB-INF/web/role/right/userListShowPage.jsp
+			</result>
+			<result name="input">/error.jsp</result>
+		</action>
+		<action name="userRoleDelete" class="com.cs.backend.action.RoleUserAction"
+			method="userRoleDelete">
+			<result name="success">/WEB-INF/web/role/right/userListShowPage.jsp
+			</result>
+			<result name="input">/error.jsp</result>
+		</action>
+	</package>
+</struts>

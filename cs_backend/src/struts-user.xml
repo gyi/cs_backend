@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="admin" namespace="/admin" extends="default">
+	     <action name="addUserShowPage" class="com.cs.backend.action.UserAction" method="addUserShowPage">
+	     	<result name="success">/WEB-INF/web/admin/addUser.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	      <action name="userAdd" class="com.cs.backend.action.UserAction" method="userAdd">
+	     	<result name="success">/WEB-INF/web/admin/addUser.jsp</result>
+	     	<result name="input">/WEB-INF/web/admin/addUser.jsp</result>
+	     </action>
+	     <action name="searchUser" class="com.cs.backend.action.UserAction" method="searchUser">
+	     	<result name="success">/WEB-INF/web/admin/userList.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	     <action name="showUserList" class="com.cs.backend.action.UserAction" method="showUserList">
+	     	<result name="success">/WEB-INF/web/admin/showUserList.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	     <action name="showUserByPrimaryKey" class="com.cs.backend.action.UserAction" method="showUserByPrimaryKey">
+	     	<result name="success">/WEB-INF/web/admin/showUserByPrimaryKey.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	     <action name="userModify" class="com.cs.backend.action.UserAction" method="userModify">
+	     	<result name="success">/WEB-INF/web/admin/showUserList.jsp</result>
+	     	<result name="input">/WEB-INF/web/admin/showUserByPrimaryKey.jsp</result>
+	     	<result name="error" type="json">
+	     		<param name="includeProperties">desc</param>
+	     	</result>
+	     </action>
+	     <action name="userByIdLogicDelete" class="com.cs.backend.action.UserAction" method="userByIdLogicDelete">
+	     	<result name="success">/WEB-INF/web/admin/showUserList.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	     <action name="modifyPasswordShowPage" class="com.cs.backend.action.UserAction" method="modifyPasswordShowPage">
+	     	<result name="success">/WEB-INF/web/admin/showpasswordModify.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	     <action name="passwordModify" class="com.cs.backend.action.UserAction" method="passwordModify">
+	     	<result name="success">/WEB-INF/web/admin/showUserList.jsp</result>
+	     	<result name="input">/WEB-INF/web/admin/showpasswordModify.jsp</result>
+	     </action>
+	</package>
+</struts>

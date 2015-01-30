@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="platform" namespace="/platform" extends="default">
+	     <action name="addPlatformShowPage" class="com.cs.backend.action.PlatformAction" method="addPlatformShowPage">
+	     	<result name="success">/WEB-INF/web/platform/addPlatform.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	      <action name="platformAdd" class="com.cs.backend.action.PlatformAction" method="platformAdd">
+	     	<result name="success">/WEB-INF/web/platform/addPlatform.jsp</result>
+	     	<result name="input">/WEB-INF/web/platform/addPlatform.jsp</result>
+	     </action>
+	     <action name="showPlatformRightList" class="com.cs.backend.action.PlatformAction" method="showPlatformRightList">
+	     	<result name="success">/WEB-INF/web/platform/showPlatformRightList.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	     <action name="searchPlatform" class="com.cs.backend.action.PlatformAction" method="searchPlatform">
+	     	<result name="success">/WEB-INF/web/platform/platformList.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	     <action name="showPlatformList" class="com.cs.backend.action.PlatformAction" method="showPlatformList">
+	     	<result name="success">/WEB-INF/web/platform/showPlatformList.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	     <action name="showPlatformByPrimaryKey" class="com.cs.backend.action.PlatformAction" method="showPlatformByPrimaryKey">
+	     	<result name="success">/WEB-INF/web/platform/showPlatformByPrimaryKey.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	     <action name="platformModify" class="com.cs.backend.action.PlatformAction" method="platformModify">
+	     	<result name="success">/WEB-INF/web/platform/showPlatformList.jsp</result>
+	     	<result name="input">/WEB-INF/web/platform/showPlatformByPrimaryKey.jsp</result>
+	     </action>
+	     <action name="platformByIdLogicDelete" class="com.cs.backend.action.PlatformAction" method="platformByIdLogicDelete">
+	     	<result name="success">/WEB-INF/web/platform/showPlatformList.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	</package>
+	<package name="platform/server" namespace="/platform/server" extends="default">
+	     <action name="serverPlatformShowPage" class="com.cs.backend.action.PlatformServerAction" method="serverPlatformShowPage">
+	     	<result name="success">/WEB-INF/web/platform/server/serverPlatformShowPage.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	      <action name="showServerListByPlatform" class="com.cs.backend.action.PlatformServerAction" method="showServerListByPlatform">
+	     	<result name="success">/WEB-INF/web/platform/server/serverListShowPage.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	     <action name="serverPlatformAdd" class="com.cs.backend.action.PlatformServerAction" method="serverPlatformAdd">
+	     	<result name="success">/WEB-INF/web/platform/server/serverListShowPage.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	     <action name="serverPlatformDelete" class="com.cs.backend.action.PlatformServerAction" method="serverPlatformDelete">
+	     	<result name="success">/WEB-INF/web/platform/server/serverListShowPage.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	</package>
+	<package name="platform/user" namespace="/platform/user" extends="default">
+	     <action name="userPlatformShowPage" class="com.cs.backend.action.PlatformUserAction" method="userPlatformShowPage">
+	     	<result name="success">/WEB-INF/web/platform/right/userPlatformShowPage.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	      <action name="showUserListByPlatform" class="com.cs.backend.action.PlatformUserAction" method="showUserListByPlatform">
+	     	<result name="success">/WEB-INF/web/platform/right/userListShowPage.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	     <action name="userPlatformAdd" class="com.cs.backend.action.PlatformUserAction" method="userPlatformAdd">
+	     	<result name="success">/WEB-INF/web/platform/right/userListShowPage.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	     <action name="userPlatformDelete" class="com.cs.backend.action.PlatformUserAction" method="userPlatformDelete">
+	     	<result name="success">/WEB-INF/web/platform/right/userListShowPage.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	</package>
+</struts>

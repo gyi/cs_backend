@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="server" namespace="/server" extends="default">
+	     <action name="addServerShowPage" class="com.cs.backend.action.ServerAction" method="addServerShowPage">
+	     	<result name="success">/WEB-INF/web/server/addServer.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	      <action name="serverAdd" class="com.cs.backend.action.ServerAction" method="serverAdd">
+	     	<result name="success">/WEB-INF/web/server/addServer.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	     <action name="searchServer" class="com.cs.backend.action.ServerAction" method="searchServer">
+	     	<result name="success">/WEB-INF/web/server/serverList.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	     <action name="showServerList" class="com.cs.backend.action.ServerAction" method="showServerList">
+	     	<result name="success">/WEB-INF/web/server/showServerList.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	     <action name="showServerByPrimaryKey" class="com.cs.backend.action.ServerAction" method="showServerByPrimaryKey">
+	     	<result name="success">/WEB-INF/web/server/showServerByPrimaryKey.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	     <action name="serverModify" class="com.cs.backend.action.ServerAction" method="serverModify">
+	     	<result name="success">/WEB-INF/web/server/showServerList.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	     <action name="serverByIdLogicDelete" class="com.cs.backend.action.ServerAction" method="serverByIdLogicDelete">
+	     	<result name="success">/WEB-INF/web/server/showServerList.jsp</result>
+	     	<result name="input">/error.jsp</result>
+	     </action>
+	     
+	     <action name="serverValidateConn" class="com.cs.backend.action.ServerAction" method="serverValidateConn">
+	     	<result name="success" type="json">
+	     		<param name="includeProperties">result</param>
+	     	</result>
+	     	<result name="input" type="json">
+	     		<param name="includeProperties">result</param>
+	     	</result>
+	     </action>
+	     <action name="serverValidateConn" class="com.cs.backend.action.ServerAction" method="serverValidateConn">
+	     	<result name="success" type="json">
+	     		<param name="includeProperties">result</param>
+	     	</result>
+	     	<result name="input" type="json">
+	     		<param name="includeProperties">result</param>
+	     	</result>
+	     </action>
+	</package>
+</struts>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="manage" namespace="/manage" extends="default">
+	     <action name="manage" class="com.cs.backend.action.ManageAction" method="manage">
+	     	<result name="success">/WEB-INF/web/desktop/desktopWindow.jsp</result>
+	     </action>
+	</package>
+</struts>

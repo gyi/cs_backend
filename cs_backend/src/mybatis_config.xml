@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd"> 
+<configuration>
+	<typeAliases>
+		<typeAlias alias="User" type="com.cs.backend.db.model.User"/>
+		<typeAlias alias="Role" type="com.cs.backend.db.model.Role"/>
+		<typeAlias alias="Menu" type="com.cs.backend.db.model.Menu"/>
+		<typeAlias alias="ROLE_MENUKey" type="com.cs.backend.db.model.ROLE_MENUKey"/>
+		<typeAlias alias="Platform" type="com.cs.backend.db.model.Platform"/>
+	</typeAliases>
+	<mappers>
+		<mapper resource="com/cs/backend/db/model/xml/UserMapper.xml"/>
+		<mapper resource="com/cs/backend/db/model/xml/RoleMapper.xml"/>
+		<mapper resource="com/cs/backend/db/model/xml/MenuMapper.xml"/>
+		<mapper resource="com/cs/backend/db/model/xml/ROLE_MENUMapper.xml"/>
+		<mapper resource="com/cs/backend/db/model/xml/PlatformMapper.xml"/>
+		<mapper resource="com/cs/backend/db/model/xml/ServerMapper.xml"/>
+		<mapper resource="com/cs/backend/db/model/xml/GameLogDBMapper.xml"/>
+		<mapper resource="com/cs/backend/db/model/xml/OperatelogMapper.xml"/>
+		<mapper resource="com/cs/backend/db/model/xml/AreaMapper.xml"/>
+	</mappers>
+</configuration>

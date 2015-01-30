@@ -1,0 +1,35 @@
+var gccp_common_isadd="是否添加";
+var gccp_common_adding="正在添加";
+var gccp_common_added="添加成功";
+var gccp_common_adderror="添加失败";
+var gccp_common_ismodify="是否修改";
+var gccp_common_modifying="正在修改";
+var gccp_common_modifyed="修改成功";
+var gccp_common_modifyerror="修改失败";
+var gccp_common_isdelete="是否删除";
+var gccp_common_deleteing="正在删除";
+var gccp_common_deleteed="删除成功";
+var gccp_common_deleteerror="删除失败";
+var gccp_common_isupload="是否上传";
+var gccp_common_uploading="正在上传";
+var gccp_common_uploaded="上传成功";
+var gccp_common_uploaderror="上传失败";
+var gccp_common_isvalidateConn="是否连接数据库";
+var gccp_common_validateConning="正在连接数据库";
+var gccp_common_validateConned="连接数据库成功";
+var gccp_common_validateConnerror="连接数据库失败";
+var gccp_common_cancel="已取消";
+var gccp_common_loading="加载中";
+var gccp_common_choose="请选择";
+var gccp_common_required="不能为空";
+var gccp_common_charandnum="输入内容只能包括英文字母和数字";
+var gccp_common_minlength="输入长度不能小于";
+var gccp_common_maxlength="输入长度不能大于";
+var gccp_common_maxsize="输入大小不能大于";
+var gccp_common_number="输入内容必须为数字";
+var gccp_common_equalTo="请再次输入相同的值";
+var gccp_common_hiddlehit="点击我隐藏";
+var gccp_common_showhit="点击我显示";
+
+var gccp_menu_chooseIcon="选择图标";
+
